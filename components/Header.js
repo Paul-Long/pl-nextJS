@@ -1,27 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
+import ActiveLink from './ActiveLink';
 
-const linkStyle = {
-  marginRight: 15
-};
-
-const Header = () => (
+export default () => (
   <div>
-    <Link href="/">
-      <a className='a-home' style={linkStyle}>Home</a>
-    </Link>
-    <Link href="/about">
-      <a className='a-about' style={linkStyle}>About</a>
-    </Link>
-    <style jsx>{`
-    .a-home {
-      color: red;
-    }
-    .a-about {
-      color: green;
-    }
-    `}</style>
+    <ActiveLink href='/'>Home</ActiveLink>
+    <ActiveLink href='/about'>About</ActiveLink>
   </div>
 );
-
-export default Header

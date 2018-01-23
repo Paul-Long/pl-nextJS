@@ -1,5 +1,4 @@
-import React from 'react';
-import Header from '../components/Header';
+import Header from 'components/Header';
 import Link from 'next/link';
 import fetch from 'isomorphic-fetch';
 
@@ -11,7 +10,7 @@ const Index = (props) => (
       {props.shows.map(({show}) => (
         <li key={show.id}>
           <Link as={`/p/${show.id}`}
-                href={`/post?id=${show.id}`}>
+                href={`/post?title=${show.id}`}>
             <a>{show.name}</a>
           </Link>
         </li>

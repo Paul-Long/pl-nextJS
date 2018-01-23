@@ -1,7 +1,6 @@
 {
   "presets": [
-    "es2015",
-    "react",
+    "next/babel",
     "stage-0"
   ],
   "plugins": [
@@ -16,6 +15,17 @@
       {
         "polyfill": false,
         "regenerator": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "components": "./components"
+        }
       }
     ]
   ]

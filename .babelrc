@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "es2015",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    [
+      "styled-jsx/babel"
+    ],
+    [
+      "transform-decorators-legacy"
+    ],
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ]
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@paul-long/pl-nextjs",
+  "version": "1.0.0",
+  "description": "try next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev node server/server.js",
+    "start": "NODE_ENV=production node server/server.js -",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paul-Long/pl-nextJS.git"
+  },
+  "keywords": [
+    "next.js"
+  ],
+  "author": "paul-long <7328194@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Paul-Long/pl-nextJS/issues"
+  },
+  "homepage": "https://github.com/Paul-Long/pl-nextJS#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.16.2",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^4.2.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-jsx": "^2.2.1"
+  }
+}

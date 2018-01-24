@@ -2,7 +2,10 @@ const express = require('express');
 const next = require('next');
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({dev});
+const mobxReact = require('mobx-react');
 const handle = app.getRequestHandler();
+
+mobxReact.useStaticRendering(true);
 
 app.prepare().then(() => {
   const server = express();

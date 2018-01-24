@@ -5,9 +5,6 @@
   ],
   "plugins": [
     [
-      "styled-jsx/babel"
-    ],
-    [
       "transform-decorators-legacy"
     ],
     [
@@ -24,8 +21,16 @@
           "./"
         ],
         "alias": {
-          "components": "./components"
+          "components": "./components",
+          "mobx": "./mobx"
         }
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": false
       }
     ]
   ]
